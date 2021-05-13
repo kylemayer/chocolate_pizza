@@ -13,81 +13,49 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
+    max-width: 80%;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
 }
 
 section {
-    background-color: var(--color5);
-    width: 1000px;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    padding: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 20% auto 25%;
+    align-items: start;
+    vertical-align: text-bottom;
+    
 }
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
+.horizontal-line {
+    background-image: url("./assets/hr-img.png");
+    background-size: cover;
+    background-repeat: repeat-x;
+    height: 10px;
+    
 }
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
-
-
-h2 {
-    font-size: 1.8rem;
+.title {
     font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.6em;
+    margin-bottom: -12px;
+}
+.post-date {
+    text-transform:uppercase ;
+    font-size: .8em;
+    color: rgb(145, 142, 142);
+}
+#print {
+    font-size: .75em;
+    color: rgb(145, 142, 142);
+    align-self: end;
+}
+.title-div {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    margin-top: -10px;
 }
 
-.gutter-right {
-    margin-right: 20px;
-}
-
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
-
-header img {
-    height: var(--header-height);
-}
-
-p {
-    margin: var(--gutter);
-}
-  
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-
-}
