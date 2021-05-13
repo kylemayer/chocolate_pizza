@@ -22,29 +22,27 @@ body {
 }
 
 section {
+    padding: 10px;
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: 15% auto 25%;
+    grid-template-columns: 20% auto 25%;
     align-items: start;
     vertical-align: text-bottom;
     
 }
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: calc(var(--footer-height));
+.horizontal-line {
+    background-image: url("./assets/hr-img.png");
+    background-size: cover;
+    background-repeat: repeat-x;
+    height: 10px;
+    
+}
+.title {
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.post-date {
+    text-transform:uppercase ;
 }
 
 
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-
-}
